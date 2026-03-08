@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Examples
 {
     private static HashMap<String, Integer> univerSalMap;
-    private final Scanner inputFetcher = new Scanner(System.in);
+    private static Scanner inputFetcher = new Scanner(System.in);
     public static void main(String args[])
     {
         intialize();

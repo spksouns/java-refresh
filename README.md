@@ -6,5 +6,5 @@ Java core concepts — written and benchmarked from scratch.
 - ✅ Collections — ArrayList, LinkedList, HashMap, HashSet, LinkedHashMap, TreeMap, Stack, Queue
 - ✅ OOP — Inheritance, Polymorphism, Abstraction, Interface
 - ✅ Java 8 Features — Streams, Lambdas, Optional
-- ⏳ DSA
+- ✅ DSA - Started with three simple problems from leetcode
 - ⏳ Concurrency

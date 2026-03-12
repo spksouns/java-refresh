@@ -52,3 +52,14 @@ select * from (select *, row_number() over (partition by trip.vehicle_id order b
 -- lead -> returns the next record's value returns null if it is the last record
 -- partition -> performs our operation within the same vehicle_id here
 select *, lag(trip.revenue) over(partition by vehicle_id order by trip_date), lead(trip.revenue) over(partition by vehicle_id order by trip_date) from trip join vehicle on vehicle.id = trip.vehicle_id;
+
+--"Find the vehicle that had the highest revenue trip. Show the vehicle number, that trip's revenue, and the total revenue that vehicle has earned across all trips."
+select *, sum(revenue) over (partition by vehicle_id) from trip join vehicle on trip.vehicle_id = vehicle.id where revenue = ( select max(revenue) from trip);
+--For each vehicle show:
+--Vehicle number
+--Each trip's revenue
+--Rank of that trip by revenue across ALL trips
+--Previous trip revenue (LAG)
+--Running total revenue per vehicle
+--Row number per vehicle ordered by revenue
+select vehiclenumber, revenue, rank() over (order by revenue desc), lag(trip.revenue) over (partition by trip.vehicle_id), sum(revenue) over (partition by vehicle_id), row_number() over (partition by vehicle_id order by revenue desc) from trip join vehicle on trip.vehicle_id = vehicle.id;

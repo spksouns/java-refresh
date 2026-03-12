@@ -14,5 +14,4 @@ Full stack developer learning journal — Java, SQL, System Design
 - ✅ SQL Advanced — Subqueries, CTEs, Window Functions (RANK, ROW_NUMBER, LAG, LEAD, PARTITION BY)
 - ✅ SQL Performance — Indexes, B-tree internals, EXPLAIN ANALYZE, Composite Index, Left Prefix Rule
 - ⏳ Concurrency — Multithreading, Race Conditions, Optimistic Locking
-- ⏳ Spring Boot — REST APIs, Spring Security, JWT, OAuth2
 - ⏳ DSA — LinkedList, Binary Search, Trees, Graphs

@@ -15,6 +15,6 @@ Full stack developer learning journal — Java, SQL, System Design
 - ✅ SQL Performance — Indexes, B-tree internals, EXPLAIN ANALYZE, Composite Index, Left Prefix Rule
 - ✅ springboot-basics — REST APIs, GET/POST,
     @RestController, @PathVariable
-    → github.com/spksouns/springboot-basics
+    implemented in [springboot-basics](github.com/spksouns/springboot-basics)
 - ⏳ Concurrency — Multithreading, Race Conditions, Optimistic Locking
 - ⏳ DSA — LinkedList, Binary Search, Trees, Graphs
